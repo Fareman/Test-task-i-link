@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    <link rel="stylesheet" href="css/Repetitive.css">
+    <title>Test task</title>
+</head>
+<body>
+    <header class="d-f ai-c">
+        <div class="d-f">
+            <img src="./img/svg/logo1.svg" alt="Test task" class="header__logopic">
+            <img src="./img/svg/logo2.svg" alt="Test task" class="header__logopic">
+        </div>
+        <div class="menu-list">
+            <ul class="header-list d-f medium-16 fiolet-color">
+                <li>Jane Doe</li>
+                <li>Tell us about yourself</li>
+                <li>Slider</li>
+            </ul>
+        </div>
+    </header>
+    <main class="main">
+        <div class="portret-block">
+            <div class="portret-background"></div>
+            <div class="d-f ai-c portret-container">
+                <div class="Jane-doe-image-container d-f ai-c jc-c">
+                    <div class="portret-purpur-block"></div>
+                    <div class="portret-pink-block"></div>
+                    <img class="Jane-doe-image" src="./img/svg/Rectangle 1.svg" alt="Jane">
+                </div>
+                <div class="JaneDoe-text-block">
+                    <div class="fw-b extraBold-56">Jane Doe</div>
+                    <ul class="d-f JD-info ">
+                        <li><span class="fiolet-color-light bold-16">Date of Birth </span><span class="medium-16">21.04.2001</span></li>
+                        <li><span class="fiolet-color-light bold-16">Gender </span><span class="medium-16">Female</span></li>
+                        <li><span class="fiolet-color-light bold-16">Country </span><span class="medium-16">Corea</span></li>
+                    </ul>
+                    <div class="extraBold-27 AboutMe">About me</div>
+                    <div class="regular-18">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    <br>
+                    <br>
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse 
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-container d-f fd-c">
+            <div class="blured-input-block1"></div>
+            <div class="blured-input-block2"></div>
+            <div class="blured-input-block3"></div>
+            <div class="fiolet-input-block"></div>
+            <div class="fioletGray-input-block"></div>
+            <div class="pink-input-block"></div>
+            <div class="tellus extraBold-40">Tell us about yourself</div>
+            <div class="d-f fd-c jc-sb fg-1">
+                <div class="d-f fd-c input-container">
+                    <div class="d-f fw-w">
+                        <div class="input-margin">
+                            <div class="semiBold-14">Your name</div>
+                            <input id="nameInput" class="input-style regular-16" placeholder="Tell us your name"/>
+                        </div>
+                        <div class="input-margin">
+                            <div class="semiBold-14">Your gender</div>
+                            <div class="gender-choiser input-style regular-16 d-f ai-c  jc-sb" onclick="clickOnGenderChoiser()">
+                                <div id="genderLabel" class="gray-color">Choose your gender</div>
+                                <img src="images/tick.png" width="15px" alt="">
+                                <div class="gender-male input-style regular-16 d-f ai-c  jc-sb hidden" onclick="ClickOnMale()">
+                                    Male
+                                </div>
+                                <div class="gender-female input-style regular-16 d-f ai-c  jc-sb hidden" onclick="ClickOnFemale()">
+                                    Female
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-f fw-w second-line hidden">
+                        <div class="input-margin">
+                            <div class="semiBold-14">Your country</div>
+                            <input id="countryInput" class="input-style regular-16" placeholder="Where are you from"/>
+                        </div>
+                        <div class="input-margin">
+                            <div class="semiBold-14">Your City</div>
+                            <input id="cityInput" class="input-style regular-16" placeholder="Your nativ sity"/>
+                        </div>
+                        <div class="input-margin">
+                            <div class="semiBold-14">Your date of birth</div>
+                            <input id="dateInput" class="input-style regular-16" placeholder="dd.mm.yyyy"/>
+                        </div>
+                    </div>
+                    <div id="dropArea" class="d-f jc-c ai-c third-line hidden">
+                        <div id="loadText" class="gilroy-medium-16">Proof your identiry with some documents</div>
+                        <div id="loadBtn" class="add-doc-btn d-f jc-c ai-c medium-16 fiolet-color">
+                            <div>
+                                Add document   
+                            </div>
+                        </div>
+                    </div>
+                    <div id="photoArea" class="d-f"></div>
+                </div>
+                <button class="main-button medium-16 white-color">Send info</button>
+            </div>
+        </div>
+    </main>
+    <footer class="d-f ai-c jc-c">
+        <div class="slider-container d-f jc-c ai-c">
+            <div class="slidedObject slider-transition active">
+                <img class="slider-img" src="./img/svg/Picture1.svg" alt="First">
+            </div>
+            <div class="slidedObject">
+                <img class="slider-img" src="./img/svg/Picture2.svg" alt="Second">
+            </div>
+            <div class="slidedObject">
+                <img class="slider-img" src="./img/svg/Picture3.svg" alt="Third">
+            </div>
+            <div class="absolute-points d-f jc-sb ai-c">
+                <div class="point point-fill"></div>
+                <div class="point"></div>
+                <div class="point"></div>
+            </div>
+            <div class="slider-tick-right">
+                <img width="20px" src="./img/svg/Arrow.svg" onclick="changeSlidedObjectRight()">
+            </div>
+            <div class="slider-tick-left">
+                <img width="20px" src="./img/svg/Arrow.svg" onclick="changeSlidedObjectLeft()">
+            </div>
+            <div class="footer-text-container d-f fd-c ai-c jc-c">
+                <div class="extraBold-56">
+                    Slide this photo
+                </div>
+                <div class="medium-18">
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script type="text/javascript" src="./js/sliderScripts.js"></script>
+    <script type="text/javascript" src="./js/genderChoiserScripts.js"></script>
+    <script type="text/javascript" src="./js/releaseSecondLine.js"></script>
+    <script type="text/javascript" src="./js/releaseThirdLine.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.4/jspdf.min.js"></script>
+    <script type="text/javascript" src="./js/loadFile.js"></script>
+</body>
+</html>
