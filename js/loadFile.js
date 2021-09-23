@@ -67,7 +67,7 @@ function previewFile(file) {
       fileAttributes.appendChild(fileExtention);
 
       let can = document.createElement('img');
-      can.src = "images/Can.png";
+      can.src = "/img/svg/Can.svg";
       can.classList.add("can-prop");
       
       imgContainer.classList.add("file-box");
